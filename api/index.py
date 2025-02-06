@@ -14,10 +14,3 @@ def sum_score():
     total_score = sum(data.get("values", []))
     return jsonify({"score": total_score})
 
-
-"""
-if __name__ == '__main__':
-    app.run(debug=True)
-"""
-def handler(event, context):
-    return app(event, context)
